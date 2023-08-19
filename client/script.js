@@ -1,4 +1,4 @@
-const socket = io("https://proxy.athallahdzaki.my.id:3000");
+const socket = io("http://proxy.athallahdzaki.my.id:3000");
 
 socket.on("AddKupon", function (data) {
     document.getElementById("Information").innerText = data;
