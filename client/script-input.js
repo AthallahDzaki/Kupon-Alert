@@ -1,4 +1,4 @@
-const socket = io("http://103.175.219.20:3000");
+const socket = io("https://proxy.athallahdzaki.my.id:3000");
 
 $("#Input").on("submit", function (event) {
     event.preventDefault();
