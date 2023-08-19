@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Pure CSS Gradient Background Animation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <div class="d-flex flex-column justify-content-center" id="PengundianDiv">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <form id="Input">
+        <div class="mb-3">
+            <label for="Number" class="form-label text-center">Nomor Kupon</label>
+            <input type="number" class="form-control" id="Number" placeholder="Masukkan Nomor Kupon" min="0">
+        </div>  
+        <div class="btn-group my-4">
+            <button class="btn btn-outline-light" type="submit" id="SendToPanel"><i class="fas fa-plane me-2"></i> SEND TO PROYEKTOR </button>
+        </div>
+        <br>
+        <h1 id="Information" class="fw-light text-black text-center text-bold m-0">Status</h1>
+        <div class="btn-group my-5">
+            <a class="btn btn-outline-light" id="Accept"> TERIMA <i class="fas fa-check-circle ms-2"></i></a>
+            <a class="btn btn-outline-light" id="Denied"> TOLAK <i class="fas fa-x ms-2"></i></a>
+          </div>
+      </form>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+  <script src="script-input.js"></script>
+</body>
+</html>
