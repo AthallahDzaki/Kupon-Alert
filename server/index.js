@@ -14,7 +14,7 @@ const server = app.listen(PORT, function () {
 const io = socket(server, {
     allowEIO3: true,
     cors: {
-        origin: true,
+        origin: "*",
         credentials: true
     }
 });
